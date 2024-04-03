@@ -167,4 +167,12 @@ It covers installation steps and configurations required for proper functioning 
 
 **End**
 
-Additional commands such as `qstat`, `qsub`, `qmod`, etc., can be utilized for various tasks.
+Additional commands such as `qstat`, `qsub`, `qmod`, etc., can be used for various tasks.
+
+- `qstat -f`: To display full and detailed information about all jobs and queues.
+- `qstat -F`: To display complete information about all jobs and queues.
+- `qmod -c main.q@hostname`: To clear a job from a specific queue (`main.q`) at a given hostname.
+- `qmod -d main.q@hostname`: To disable a job in a specific queue (`main.q`) at a given hostname.
+- `qmod -e main.q@hostname`: To enable a job in a specific queue (`main.q`) at a given hostname.
+- `qdel listnum`: To delete a job with the specified job number.
+- `qsub`: To submit a job for execution.
